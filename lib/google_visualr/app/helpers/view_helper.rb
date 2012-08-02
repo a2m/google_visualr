@@ -8,6 +8,7 @@ module GoogleVisualr
 
       included do
         helper_method "render_chart"
+        helper_method "render_chart_raw"
       end
 
       def render_chart(chart, dom)
