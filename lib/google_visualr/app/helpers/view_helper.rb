@@ -13,7 +13,10 @@ module GoogleVisualr
       def render_chart(chart, dom)
         chart.to_js(dom).html_safe
       end
-
+      
+      def render_chart_raw(chart, dom)
+        chart.to_js_raw(dom)
+      end
     end
 
   end
