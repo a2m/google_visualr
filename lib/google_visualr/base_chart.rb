@@ -36,7 +36,7 @@ module GoogleVisualr
       js << "\n    chart.draw(data_table, #{js_parameters(@options)});"
       js << "\n    chart_persistent.push(chart)"
       js << "\n    data_persistent.push(data_table)"
-      js << "\n    option_persistent.push(option)"
+      js << "\n    option_persistent.push(#{js_parameters(@options)})"
       js << "\n  }});"
       js
     end
